@@ -67,4 +67,6 @@ This backend server powers a video sharing platform with social features, built 
   npm run dev
 ```
 
+## Special Thanks to
+Inspired by [Chai aur Code](https://youtube.com/@chaiaurcode) YouTube tutorials.
 
