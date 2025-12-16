@@ -17,10 +17,12 @@ app.use(cookieParser())
 //routes import
 import userRouter from "./routes/user.routes.js"
 import likeRouter from "./routes/like.routes.js"
+import commentRouter from "./routes/comment.routes.js"
 
 //routes declaration
 app.use("/api/v1/users", userRouter)
-app.use("api/v1/likes", likeRouter)
+app.use("/api/v1/likes", likeRouter)
+app.use("/api/v1/comments", commentRouter)
 
 //http://localhost:8000/api/v1/users/register (Here the middleware passes control to userRouter on url hit)
 
