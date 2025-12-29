@@ -5,7 +5,7 @@ import { getVideoComments, addComment, deleteComment, updateComment } from "../c
 const router = Router();
 router.use(verifyJWT); // Apply middleware to all the routes
 
-router.route("/:videoId").get().post();
-router.route("/comment/:commentId").delete().patch();
+router.route("/:videoId").get(getVideoComments).post(addComment);
+router.route("/comment/:commentId").delete(deleteComment).patch(updateComment);
 
 export default router;
